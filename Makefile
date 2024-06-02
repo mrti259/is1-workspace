@@ -4,5 +4,8 @@ install:
 run:
 	sh scripts/run.sh
 
-clone:
-	gh repo clone "$(ORG)/$(CUATRI)-$(ejercicio)-$(grupo)"
+clone: files
+	cd files && gh repo clone "$(ORG)/$(CUATRI)-$(ejercicio)-$(grupo)" 
+
+files:
+	mkdir files

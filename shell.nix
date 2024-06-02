@@ -4,8 +4,9 @@ pkgs.mkShell {
   buildInputs = with pkgs; [
     gnumake
     squeak
-    poetry
     gh
+    poetry
+    nodejs
   ];
   
   LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
