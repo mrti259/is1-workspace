@@ -25,7 +25,7 @@ if [ -d "$dir_latest_vm" ]; then
 fi
 
 # Descargar última versio
-if [ -d "$asset_file" ]; then
+if [ ! -d "$asset_file" ]; then
 	wget https://github.com/$repo/releases/download/$latest_tag/$asset_file
 fi
 
