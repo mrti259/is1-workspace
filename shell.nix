@@ -5,12 +5,14 @@ pkgs.mkShell {
     gnumake
     squeak
     gh
-    poetry
     nodejs
+    poetry
+    python311
+    python311Packages.flask
   ];
   
   LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
 
   ORG = "Ingenieria-de-software-I-alumnos";
-  CUATRI = "1c2024";
+  CUATRI = "2c2024";
 }
